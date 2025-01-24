@@ -39,3 +39,9 @@ kamudian buat file `html` dan tambahkan
     //kode react di sini
 </script>
 ```
+
+
+## Demos
+[Hello World](https://nexu20.github.io/reaksi/examples/01-hello-world.html)
+
+[State Example](https://nexu20.github.io/reaksi/examples/02-state.html)
