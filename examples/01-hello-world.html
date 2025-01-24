@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaksi</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="../dist/reaksi.umd.js"></script>
+    <script type="text/jsx" data-presets="es2016,react">
+        /** @jsx reaksi.createElement */
+		const root = document.getElementById("root");
+		class App extends reaksi.Component {
+            constructor(props) {
+                super(props);
+            }
+
+			render() {
+				return (
+                    <div>
+                        <h1>Hello {this.props.name}!</h1>
+                    </div>
+                );
+			}
+		}
+		reaksi.render(<App name="Lindan" />, root);
+    </script>
+</body>
+</html>
